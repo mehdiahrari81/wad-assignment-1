@@ -1,0 +1,265 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(233, 241, 236);
+  color: rgb(30, 61, 39);
+  line-height: 1.6;
+  margin: 10px;
+}
+
+.header {
+  background-color: rgb(46, 109, 77);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 2px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 2px 4px 0px rgba(42, 37, 37, 0.16);
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: rgb(245, 245, 245);
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 1px 0px rgba(0, 0, 0, 0.2); 
+  display: block;
+}
+
+.navbar li a:hover {
+  background-color: rgb(79, 161, 120);
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  color: rgb(28, 71, 43);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.box1, .box2, .box3, .box4, .box5 {
+  width: auto;
+  background-color: rgb(207, 230, 217);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 100%;
+}
+
+.box1 h2, 
+.box2 h2, 
+.box3 h2, 
+.box4 h2, 
+.box5 h2,
+.box1 h3, 
+.box2 h3, 
+.box3 h3, 
+.box4 h3, 
+.box5 h3 {
+  color: rgb(12, 54, 34);
+}
+
+.box1 a,
+.box2 a,
+.box3 a,
+.box4 a,
+.box5 a{
+text-decoration: none;
+color: rgb(49, 54, 50);
+}
+
+.box1 a:hover,
+.box2 a:hover,
+.box3 a:hover,
+.box4 a:hover,
+.box5 a:hover{
+  color: rgb(51, 177, 250);
+}
+
+.box1 ul, .box2 ul, .box3 ul, .box4 ul, .box5 ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer {
+  background-color: rgb(28, 75, 54);
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.post-box {
+  background-color: rgb(207, 230, 217);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+.post-box h2 {
+  color: rgb(12, 54, 34);
+  margin-bottom: 15px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.post-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-box ul li {
+  background-color: rgb(255, 255, 255);
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  color: rgb(28, 71, 43);
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.post-box ul li:hover {
+  background-color: rgb(183, 219, 196);
+}
+
+.post-box ul li a {
+  text-decoration: none;
+  color: rgb(94, 113, 98);
+}
+
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    position: static;
+    padding: 12px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    padding-left: 0;
+  }
+
+  .navbar li a {
+    width: 100%;
+    display: block;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .box1, .box2, .box3, .box4, .box5 {
+    margin: 15px;
+    padding: 18px;
+  }
+
+  .post-box {
+    padding: 10px 15px;
+    margin: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .footer {
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 13px;
+    margin: 5px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 8px;
+    position: static;
+  }
+
+  .logo {
+    height: 45px;
+    width: 45px;
+  }
+
+  .navbar ul {
+    gap: 10px;
+    align-items: center;
+  }
+
+  .navbar li a {
+    font-size: 13px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .box1, .box2, .box3, .box4, .box5 {
+    padding: 12px;
+    margin: 10px;
+  }
+
+  .post-box {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .footer {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .post-box {
+    padding: 12px;
+    margin: 10px;
+  }
+
+  .post-box h2 {
+    font-size: 18px;
+  }
+
+  .post-box ul li {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
